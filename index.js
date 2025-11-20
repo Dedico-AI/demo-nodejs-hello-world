@@ -549,6 +549,29 @@ app.get('/', (req, res) => {
 
         /* Responsive Design */
         @media (max-width: 768px) {
+          nav {
+            padding: 0 1rem;
+            flex-wrap: wrap;
+          }
+
+          .logo {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+          }
+
+          .nav-links {
+            gap: 0.5rem;
+            font-size: 0.85rem;
+          }
+
+          .nav-links a {
+            padding: 0.3rem 0.5rem;
+          }
+
+          .hero {
+            padding: 3rem 1rem;
+          }
+
           .hero h1 {
             font-size: 2rem;
           }
@@ -557,8 +580,13 @@ app.get('/', (req, res) => {
             font-size: 1rem;
           }
 
-          .nav-links {
-            gap: 1rem;
+          .cta-button {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+          }
+
+          .section {
+            padding: 0 1rem;
           }
 
           .section-title {
@@ -566,11 +594,57 @@ app.get('/', (req, res) => {
           }
 
           table {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
           }
 
           th, td {
-            padding: 1rem 0.5rem;
+            padding: 0.8rem 0.3rem;
+          }
+
+          .casino-card {
+            padding: 1.5rem;
+          }
+
+          .footer-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .logo {
+            font-size: 1rem;
+          }
+
+          .nav-links {
+            width: 100%;
+            justify-content: space-around;
+            gap: 0.3rem;
+            font-size: 0.75rem;
+          }
+
+          .hero h1 {
+            font-size: 1.5rem;
+          }
+
+          .hero p {
+            font-size: 0.9rem;
+          }
+
+          .cta-button {
+            padding: 0.8rem 1.5rem;
+            font-size: 0.9rem;
+          }
+
+          .section-title {
+            font-size: 1.5rem;
+          }
+
+          table {
+            font-size: 0.7rem;
+          }
+
+          th, td {
+            padding: 0.5rem 0.2rem;
           }
         }
 
