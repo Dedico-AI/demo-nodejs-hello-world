@@ -606,7 +606,7 @@ app.get('/', (req, res) => {
         <!-- Header -->
         <header>
           <nav>
-            <div class="logo">🎰 PremiumCasino.Deals</div>
+            <div class="logo">🎰 BonusPedro.com</div>
             <ul class="nav-links">
               <li><a href="#home">Home</a></li>
               <li><a href="#casinos">Top Casinos</a></li>
@@ -831,7 +831,7 @@ app.get('/', (req, res) => {
               <p>This website contains affiliate links. We may receive compensation when you sign up with our partners.</p>
               <p>Gambling can be addictive. Please play responsibly and within your means.</p>
               <p class="age-warning">⚠️ 18+ Only | Gamble Responsibly | BeGambleAware.org</p>
-              <p style="margin-top: 1rem;">&copy; 2024 PremiumCasino.Deals | All Rights Reserved</p>
+              <p style="margin-top: 1rem;">&copy; 2024 BonusPedro.com | All Rights Reserved</p>
             </div>
           </div>
         </footer>
