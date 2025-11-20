@@ -4,18 +4,18 @@ A simple, beautifully styled "Hello World" web application built with Node.js an
 
 ## 🚀 Live Demo
 
-**Live URL:** [Will be updated after Railway deployment]
+**Live URL:** [Will be updated after deployment]
 
 ## 📋 Description
 
-This is a minimalist web application that displays "Hello World" with a modern, gradient-styled interface. Built as a demonstration of deploying a Node.js application to Railway.
+This is a minimalist web application that displays "Hello World" with a modern, gradient-styled interface. Built as a demonstration of deploying a Node.js application to platforms like Vercel and Railway.
 
 ## ✨ Features
 
 - Simple Express.js server
 - Responsive design with CSS animations
 - Health check endpoint for monitoring
-- Optimized for Railway deployment
+- Optimized for Vercel and Railway deployment
 - Beautiful gradient UI
 
 ## 🛠️ Technologies Used
@@ -58,9 +58,38 @@ This is a minimalist web application that displays "Hello World" with a modern, 
 
 You should see the "Hello World" message displayed with a beautiful gradient background!
 
-## 🌐 Deployment to Railway
+## 🌐 Deployment
 
-### Option 1: Deploy via GitHub (Recommended)
+### Deploy to Vercel (Recommended)
+
+#### Option 1: Deploy via Vercel Dashboard
+
+1. Push your code to GitHub
+2. Go to [Vercel](https://vercel.com)
+3. Sign up or log in
+4. Click "Add New Project"
+5. Import your GitHub repository
+6. Vercel will automatically detect the Node.js app
+7. Click "Deploy"
+8. Once deployed, Vercel will provide you with a public URL
+
+#### Option 2: Deploy via Vercel CLI
+
+1. Install Vercel CLI:
+   ```bash
+   npm i -g vercel
+   ```
+
+2. Deploy from your project directory:
+   ```bash
+   vercel
+   ```
+
+3. Follow the prompts to complete deployment
+
+### Deploy to Railway
+
+#### Option 1: Deploy via GitHub
 
 1. Push your code to GitHub
 2. Go to [Railway](https://railway.app)
@@ -71,7 +100,7 @@ You should see the "Hello World" message displayed with a beautiful gradient bac
 7. Railway will automatically detect the Node.js app and deploy it
 8. Once deployed, Railway will provide you with a public URL
 
-### Option 2: Deploy via Railway CLI
+#### Option 2: Deploy via Railway CLI
 
 1. Install Railway CLI:
    ```bash
@@ -96,6 +125,7 @@ helloworld/
 │
 ├── index.js          # Main application file
 ├── package.json      # Project dependencies and scripts
+├── vercel.json      # Vercel deployment configuration
 ├── .gitignore       # Git ignore rules
 └── README.md        # Project documentation (this file)
 ```
@@ -126,7 +156,7 @@ To verify the application is working:
 The application uses the following environment variables:
 
 - `PORT` - Port number for the server (default: 3000)
-  - Railway automatically sets this when deployed
+  - Both Vercel and Railway automatically set this when deployed
 
 ## 🤝 Contributing
 
@@ -151,12 +181,16 @@ Created as part of a web development learning exercise.
 PORT=3001 npm start
 ```
 
-### Issue: Application not loading on Railway
-**Solution:** Ensure your `package.json` has the correct `start` script and that Railway detected it as a Node.js app
+### Issue: Application not loading on Vercel/Railway
+**Solution:**
+- For Vercel: Ensure `vercel.json` is present and properly configured
+- For Railway: Ensure your `package.json` has the correct `start` script
+- Both platforms should automatically detect it as a Node.js app
 
 ## 📚 Additional Resources
 
 - [Express.js Documentation](https://expressjs.com/)
+- [Vercel Documentation](https://vercel.com/docs)
 - [Railway Documentation](https://docs.railway.app/)
 - [Node.js Documentation](https://nodejs.org/docs/)
 
